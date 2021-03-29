@@ -1,10 +1,11 @@
 $gray: rgb(156, 156, 156)
 $white: rgb(255, 255, 255)
 $black: rgb(21, 21, 21)
+$yellow: rgb(255, 228, 0)
 
 .headingOne
     font-size: 3.2rem
-    font-weight: bold
+    font-weight: 500
     line-height: 1.2
     color: $black
 
@@ -39,6 +40,21 @@ $black: rgb(21, 21, 21)
     letter-spacing: 0.05rem
     line-height: 1.72
     color: $gray
+    margin: 20px 0px
+
+.button
+    font-size: 1.6rem
+    font-weight: bold
+    border-radius: 50px
+    border: 1px solid $yellow
+    background-color: $yellow
+    padding: 1.5rem 2.5rem
+    transition: color 0.5s, background-color 0.5s, border 0.5s
+
+    &:hover
+        color: $yellow
+        background-color: $black
+        border: 1px solid $black
 
 
 @media screen and ( min-width: 760px )
