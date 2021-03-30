@@ -171,10 +171,12 @@ body {
 .header {
   width: 100vw;
   padding: 50px 20px;
+  overflow-x: hidden;
 }
 
 .header__wrapper {
   max-width: 1300px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,13 +192,14 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin: 0 auto;
 }
 
 .header__imageArticle {
   display: none;
 }
 
-.header__decorationZigZagOne, .header__decorationZigZagTwo, .header__circleDecorationFirst {
+.header__decorationZigZagOne, .header__decorationZigZagTwo, .header__decorationZigZagThree, .header__decorationZigZagFour, .header__decorationCircleOne, .header__decorationCircleTwo, .header__decorationTriangleOne, .header__decorationTriangleTwo {
   display: none;
 }
 
@@ -208,6 +211,7 @@ body {
     width: 50%;
   }
   .header__imageArticle {
+    position: relative;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,6 +219,7 @@ body {
   }
   .header__image {
     width: 100%;
+    z-index: 1;
   }
   .header__decorationZigZagOne {
     display: block;
@@ -242,7 +247,7 @@ body {
     -webkit-animation: zigZagTwo 4s ease-out alternate infinite;
             animation: zigZagTwo 4s ease-out alternate infinite;
   }
-  .header__circleDecorationFirst {
+  .header__decorationCircleOne {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -264,13 +269,147 @@ body {
     -webkit-animation: circleOneDecoration 1s linear alternate infinite;
             animation: circleOneDecoration 1s linear alternate infinite;
   }
-  .header__circleDecorationFirst::after {
+  .header__decorationCircleOne::after {
     content: "";
     position: absolute;
     width: 40%;
     height: 40%;
     background-color: white;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .header__decorationZigZagOne {
+    top: 8%;
+    left: 90%;
+  }
+  .header__decorationZigZagTwo {
+    top: 90%;
+    left: -16%;
+  }
+  .header__decorationZigZagThree {
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 105%;
+    stroke: #000;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    -webkit-animation: zigZagTwo 3s ease-out alternate infinite;
+            animation: zigZagTwo 3s ease-out alternate infinite;
+  }
+  .header__decorationZigZagFour {
+    display: block;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+  }
+  .header__decorationBigYellowCircle {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 450px;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-radius: 50%;
+    background-color: #ffe400;
+  }
+  .header__decorationBigYellowCircle::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .header__decorationCircleTwo {
+    position: absolute;
+    top: 13%;
+    left: -12%;
+    width: 30px;
+    height: 30px;
+    background-color: #151515;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: circleOneDecoration 1s 0.3s linear alternate infinite;
+            animation: circleOneDecoration 1s 0.3s linear alternate infinite;
+  }
+  .header__decorationCircleTwo::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .header__decorationCircleThree {
+    position: absolute;
+    top: 84%;
+    left: 20.5%;
+    width: 120px;
+    height: 120px;
+    background-color: #ffe400;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__decorationCircleThree::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .header__decorationTriangleOne {
+    position: absolute;
+    top: 11%;
+    left: 38.5%;
+    width: 50px;
+    display: block;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  .header__decorationTriangleTwo {
+    position: absolute;
+    top: 48%;
+    left: -10%;
+    width: 50px;
+    display: block;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
