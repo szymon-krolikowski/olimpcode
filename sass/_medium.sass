@@ -6,11 +6,13 @@
             width: 50%
 
         &__imageArticle
+            position: relative
             width: 50%
             display: flex
 
         &__image
             width: 100%
+            z-index: 1
 
         &__decorationZigZagOne
             display: block
@@ -36,7 +38,7 @@
             stroke-dashoffset: 130
             animation: zigZagTwo 4s ease-out alternate infinite
 
-        &__circleDecorationFirst
+        &__decorationCircleOne
             position: absolute
             top: 70%
             left: 50%
