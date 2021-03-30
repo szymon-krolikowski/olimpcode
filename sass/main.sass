@@ -22,15 +22,24 @@ body
 
 .header
     width: 100vw
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    align-content: center
     padding: 50px 20px
+
+    &__wrapper
+        max-width: 1300px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        align-content: center
 
     &__imageArticle
         display: none
+
+    &__decorationZigZagOne,
+    &__decorationZigZagTwo,
+    &__circleDecorationFirst
+        display: none
+
 
 
 @import "./_medium"

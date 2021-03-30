@@ -89,6 +89,64 @@
   }
 }
 
+@-webkit-keyframes zigZag {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zigZag {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes zigZagTwo {
+  0% {
+    stroke-dashoffset: 130;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zigZagTwo {
+  0% {
+    stroke-dashoffset: 130;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes circleOneDecoration {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes circleOneDecoration {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -112,6 +170,11 @@ body {
 
 .header {
   width: 100vw;
+  padding: 50px 20px;
+}
+
+.header__wrapper {
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,10 +190,87 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 50px 20px;
 }
 
 .header__imageArticle {
   display: none;
+}
+
+.header__decorationZigZagOne, .header__decorationZigZagTwo, .header__circleDecorationFirst {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+  }
+  .header__textArticle {
+    width: 50%;
+  }
+  .header__imageArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__image {
+    width: 100%;
+  }
+  .header__decorationZigZagOne {
+    display: block;
+    position: absolute;
+    top: 12.5%;
+    left: 85%;
+    stroke: #000;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    -webkit-animation: zigZag 2s ease-out alternate infinite;
+            animation: zigZag 2s ease-out alternate infinite;
+  }
+  .header__decorationZigZagTwo {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    stroke: #000;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    -webkit-animation: zigZagTwo 4s ease-out alternate infinite;
+            animation: zigZagTwo 4s ease-out alternate infinite;
+  }
+  .header__circleDecorationFirst {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #151515;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: circleOneDecoration 1s linear alternate infinite;
+            animation: circleOneDecoration 1s linear alternate infinite;
+  }
+  .header__circleDecorationFirst::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
