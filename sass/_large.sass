@@ -185,4 +185,61 @@
             top: 40%
             left: -10%
             stroke-width: 2px
+    
+    .contact
+
+        &__wrapper
+            position: relative
+            max-width: 1000px
+            margin: 0 auto
+
+        &__image
+            position: relative
+            width: 100%
+            z-index: 1
+
+        &__textArticle
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-content: flex-end
+            align-items: flex-end
+
+        &__boxContact
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: flex-end
+            align-content: flex-end
+
+        &__decorationBigYellowCircle
+            top: 0%
+            left: -25%
+            width: 350px
+            height: 350px
+
+        &__decorationCircleOne
+            display: block
+            position: absolute
+            top: 1%
+            left: 110%
+            width: 35px
+            height: 35px
+            background-color: $black
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            animation: circleOneDecoration 1s linear alternate infinite
+
+            &::after
+                content: ""
+                position: absolute
+                width: 40%
+                height: 40%
+                background-color: $white
+                border-radius: 50%
+            
+    
         
