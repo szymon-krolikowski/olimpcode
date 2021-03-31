@@ -126,6 +126,24 @@
   }
 }
 
+@-webkit-keyframes zigZagThree {
+  0% {
+    stroke-dashoffset: 140;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zigZagThree {
+  0% {
+    stroke-dashoffset: 140;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 @-webkit-keyframes circleOneDecoration {
   0% {
     -webkit-transform: scale(1);
@@ -375,6 +393,90 @@ body {
     width: 40%;
     height: 40%;
     background-color: white;
+    border-radius: 50%;
+  }
+  .statistic {
+    position: relative;
+    padding: 50px 0px;
+  }
+  .statistic__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .statistic__textArticle {
+    width: 100%;
+  }
+  .statistic__statisticsArticle {
+    width: 50%;
+  }
+  .statistic__boxStatistic {
+    width: 100%;
+    margin: 50px 0px 0px;
+  }
+  .statistic__imageArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .statistic__decorationZigZagOne {
+    position: absolute;
+    top: -2%;
+    left: 55%;
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;
+    -webkit-animation: zigZagThree 3s ease-out alternate infinite;
+            animation: zigZagThree 3s ease-out alternate infinite;
+  }
+  .statistic__decorationZigZagTwo {
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 45%;
+  }
+  .statistic__decorationCircleOne {
+    position: absolute;
+    top: 101%;
+    left: 5%;
+    width: 25px;
+    height: 25px;
+    background-color: #151515;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: circleOneDecoration 1s linear alternate infinite;
+            animation: circleOneDecoration 1s linear alternate infinite;
+  }
+  .statistic__decorationCircleOne::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: #ffe400;
     border-radius: 50%;
   }
 }
