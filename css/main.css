@@ -43,7 +43,6 @@
   letter-spacing: 0.05rem;
   line-height: 1.72;
   color: #9c9c9c;
-  margin: 20px 0px;
 }
 
 .button {
@@ -324,6 +323,100 @@ body {
 
 .statistic__decorationZigZagOne, .statistic__decorationZigZagTwo, .statistic__decorationZigZagTwo, .statistic__decorationDashOne, .statistic__decorationDashTwo {
   display: none;
+}
+
+.contact {
+  width: 100vw;
+  padding: 50px 20px 0px;
+  overflow-x: hidden;
+}
+
+.contact__wrapper {
+  width: 100%;
+}
+
+.contact__textArticle {
+  width: 100%;
+  margin: 0px 0px 80px;
+}
+
+.contact__boxContact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.contact__boxIcon {
+  padding-right: 20px;
+}
+
+.contact__icon {
+  width: 30px;
+}
+
+.contact__paragraph {
+  font-weight: 400;
+}
+
+.contact__imageArticle {
+  width: 100%;
+  position: relative;
+}
+
+.contact__image {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact__decorationBigYellowCircle {
+  position: absolute;
+  top: -6%;
+  left: -20%;
+  width: 300px;
+  height: 300px;
+  background-color: #ffe400;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__decorationBigYellowCircle::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.contact__decorationZigZagOne {
+  position: absolute;
+  top: -20%;
+  left: 70%;
+  fill: transparent;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  -webkit-animation: zigZagTwo 2s ease-out alternate infinite;
+          animation: zigZagTwo 2s ease-out alternate infinite;
 }
 
 @media screen and (min-width: 768px) {
