@@ -38,7 +38,7 @@
 }
 
 .paragraph {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
   line-height: 1.72;
@@ -323,6 +323,87 @@ body {
 
 .statistic__decorationZigZagOne, .statistic__decorationZigZagTwo, .statistic__decorationZigZagTwo, .statistic__decorationDashOne, .statistic__decorationDashTwo {
   display: none;
+}
+
+.services {
+  width: 100vw;
+  padding: 50px 20px;
+}
+
+.services__textArticle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.services__boxArticle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.services__box {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.services__boxIcon {
+  position: relative;
+}
+
+.services__decorationYellowTriangle {
+  position: absolute;
+  left: 10%;
+}
+
+.services__icon {
+  position: relative;
+  width: 60px;
 }
 
 .contact {
