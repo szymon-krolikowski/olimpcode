@@ -19,6 +19,7 @@ body
     background-image: radial-gradient(#c4c4c4 1px, #0000 0)
     background-position: 50%
     background-size: 80px 80px
+    overflow-x: hidden
 
 .header
     width: 100vw
@@ -120,8 +121,12 @@ body
         position: relative
         z-index: 1
 
-
-
+    &__decorationZigZagOne,
+    &__decorationZigZagTwo,
+    &__decorationZigZagTwo,
+    &__decorationDashOne,
+    &__decorationDashTwo
+        display: none
 
 @import "./_medium"
 @import "./_large"
