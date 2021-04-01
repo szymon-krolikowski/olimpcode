@@ -189,6 +189,7 @@
     .services
 
         &__wrapper
+            position: relative
             max-width: 1200px
             margin: 0 auto
 
@@ -204,6 +205,55 @@
             align-items: center
             text-align: center
             margin: 1% 1%
+            z-index: 100
+
+        &__decorationBigGrayCircle
+            position: absolute
+            top: -30%
+            left: 100%
+            width: 700px
+            height: 700px
+            border-radius: 50%
+            background-color: rgba(156, 156, 156, 0.1)
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-content: center
+            align-items: center
+            animation: circleGrayDecoration 40s linear alternate infinite
+
+            &::before
+                content: ""
+                position: absolute
+                width: 40%
+                height: 40%
+                background-color: $white
+                border-radius: 50%
+                z-index: -1
+
+        &__decorationCircleOne
+            display: block
+            position: absolute
+            top: 72%
+            left: -10%
+            width: 25px
+            height: 25px
+            background-color: $black
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            animation: circleOneDecoration 1s linear alternate infinite
+
+            &::after
+                content: ""
+                position: absolute
+                width: 40%
+                height: 40%
+                background-color: $white
+                border-radius: 50%
+
     
     .contact
 
@@ -259,6 +309,8 @@
                 height: 40%
                 background-color: $white
                 border-radius: 50%
+
+        
             
     
         

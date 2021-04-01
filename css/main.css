@@ -178,6 +178,28 @@
   }
 }
 
+@-webkit-keyframes circleGrayDecoration {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes circleGrayDecoration {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -245,6 +267,7 @@ body {
   background-image: radial-gradient(#c4c4c4 1px, #0000 0);
   background-size: 80px 80px;
   padding: 50px 0px 0px;
+  z-index: 2;
 }
 
 .statistic__textArticle {
@@ -420,6 +443,11 @@ body {
   border-radius: 10px;
 }
 
+.services__box:hover .services__decorationYellowTriangle {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
 .services__boxIcon {
   position: relative;
 }
@@ -427,6 +455,10 @@ body {
 .services__decorationYellowTriangle {
   position: absolute;
   left: 10%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .services__decorationYellowTriangle--one {
@@ -1046,6 +1078,7 @@ body {
     stroke-width: 2px;
   }
   .services__wrapper {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -1071,6 +1104,73 @@ body {
             align-items: center;
     text-align: center;
     margin: 1% 1%;
+    z-index: 100;
+  }
+  .services__decorationBigGrayCircle {
+    position: absolute;
+    top: -30%;
+    left: 100%;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgba(156, 156, 156, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: circleGrayDecoration 40s linear alternate infinite;
+            animation: circleGrayDecoration 40s linear alternate infinite;
+  }
+  .services__decorationBigGrayCircle::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .services__decorationCircleOne {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: -10%;
+    width: 25px;
+    height: 25px;
+    background-color: #151515;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: circleOneDecoration 1s linear alternate infinite;
+            animation: circleOneDecoration 1s linear alternate infinite;
+  }
+  .services__decorationCircleOne::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50%;
   }
   .contact__wrapper {
     position: relative;

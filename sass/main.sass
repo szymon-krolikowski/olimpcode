@@ -59,6 +59,7 @@ body
     background-image: radial-gradient(#c4c4c4 1px, #0000 0)
     background-size: 80px 80px
     padding: 50px 0px 0px
+    z-index: 2
 
     &__textArticle
         padding: 0px 20px
@@ -173,12 +174,16 @@ body
         margin: 20px 0px
         border-radius: 10px
 
+    &__box:hover .services__decorationYellowTriangle
+        transform: rotate(10deg)
+
     &__boxIcon
         position: relative
 
     &__decorationYellowTriangle
         position: absolute
         left: 10%
+        transition: transform 0.5s
 
         &--one
             transform: rotate(20deg)
