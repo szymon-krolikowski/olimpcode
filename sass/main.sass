@@ -23,7 +23,7 @@ body
 
 .header
     width: 100vw
-    padding: 50px 20px 0px
+    padding: 50px 20px
     overflow-x: hidden
 
     &__fontWeight
@@ -52,7 +52,58 @@ body
     &__decorationTriangleTwo
         display: none
 
+.recentProjects
+    width: 100vw
+    padding: 50px 20px
+    position: relative
+    background-color: #F6F6F6
 
+    &__wrapper
+        width: 100%
+        max-width: 1300px
+        margin: 0 auto
+        position: relative
+
+    &__sliderContainer
+        width: 100%
+        height: 100%
+
+    &__image
+        width: calc(100%)
+
+    &__textArticle
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        text-align: center
+
+    &__headingThree
+        margin: 20px 0px 40px
+
+    &__textBox
+        margin-top: 10px
+
+.swiper-slide
+    font-size: 18px
+    background: #F6F6F6
+    display: flex
+    flex-direction: column
+    height: 130%
+
+.swiper-button-prev
+    position: absolute
+    top: 91% !important
+    left: 70% !important
+    color: $black !important
+
+.swiper-button-next
+    position: absolute
+    top: 91% !important
+    left: 85% !important
+    color: $black !important
+    
 .statistic
     width: 100vw
     background-color: $yellow
