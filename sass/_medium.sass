@@ -60,6 +60,39 @@
                 background-color: $white
                 border-radius: 50%
 
+    .recentProjects
+        position: relative
+        overflow: hidden
+
+        &__headingThree
+            z-index: 10
+
+        &__decorationBigGrayCircle
+            width: 450px
+            height: 450px
+            border-radius: 50%
+            background-color: rgb(240, 240, 240)
+            position: absolute
+            top: -10%
+            left: -20%
+            display: flex
+            justify-content: center
+            align-items: center
+            align-content: center
+
+            &::before
+                content: ""
+                width: 40%
+                height: 40%
+                background-color: #F6F6F6
+                border-radius: 50%
+                
+    .swiper-button-prev--mobile
+        left: 82% !important
+
+    .swiper-button-next--mobile
+        left: 90% !important    
+        
     .statistic
         position: relative
         padding: 50px 0px
