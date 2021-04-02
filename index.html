@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -96,6 +97,49 @@
         </div>
       </div>
     </header>
+
+    <section class="recentProjects">
+      <div class="recentProjects__wrapper">
+        <article class="recentProjects__textArticle">
+          <img src="image/decoration-yellow-circle.png" alt="">
+          <h2 class="headingTwo recentProjects__headingThree">Najnowsze realizacje</h2>
+        </article>
+        <div class="recentProjects__sliderContainer swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="recentProjects__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.png">
+              <div class="recentProjects__textBox">
+                <h3 class="headingThree">Strona internetowa</h3>
+                <p class="paragraph">GreenCircle</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="recentProjects__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.png">
+              <div class="recentProjects__textBox">
+                <h3 class="headingThree">Strona internetowa</h3>
+                <p class="paragraph">GreenCircle</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="recentProjects__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.png">
+              <div class="recentProjects__textBox">
+                <h3 class="headingThree">Strona internetowa</h3>
+                <p class="paragraph">GreenCircle</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="recentProjects__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.png">
+              <div class="recentProjects__textBox">
+                <h3 class="headingThree">Strona internetowa</h3>
+                <p class="paragraph">GreenCircle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
 
     <section class="statistic">
       <div class="statistic__wrapper">
@@ -421,4 +465,6 @@
       </div>
     </section>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
 </html>
