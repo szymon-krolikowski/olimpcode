@@ -872,6 +872,10 @@ span.active {
           animation: zigZagTwo 2s ease-out alternate infinite;
 }
 
+.contact__decorationZigZagTwo {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     position: relative;
@@ -1162,6 +1166,7 @@ span.active {
             animation: zigZagTwo 2s ease-out alternate infinite;
   }
   .contact__decorationZigZagTwo {
+    display: block;
     position: absolute;
     top: 80%;
     left: 160%;
@@ -1366,6 +1371,7 @@ span.active {
   }
   .yourWebsite__box {
     width: 30%;
+    margin: 20px 0px;
   }
   .yourWebsite__box:nth-child(1) {
     margin: 30px 0px 30px;
@@ -1641,6 +1647,11 @@ span.active {
     max-width: 1000px;
     margin: 0 auto;
   }
+  .contact__heading {
+    font-size: 2.8rem;
+    line-height: 1.45;
+    color: #151515;
+  }
   .contact__image {
     position: relative;
     width: 100%;
@@ -1654,14 +1665,14 @@ span.active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contact__boxContact {
     display: -webkit-box;
@@ -1671,14 +1682,14 @@ span.active {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .contact__decorationBigYellowCircle {
     top: 0%;
