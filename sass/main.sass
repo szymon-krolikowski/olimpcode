@@ -112,6 +112,7 @@ body
     width: 100vw
     padding: 50px 20px
     background-image: url("../image/biurko-laptop.jpg")
+    background-attachment: fixed
 
     &__headingArticle
         display: flex
@@ -149,6 +150,28 @@ body
 
     &__box:nth-child(1)
         margin: 50px 0px 20px
+
+    &__decorationZigZagOne,
+    &__decorationZigZagTwo,
+    &__decorationWhiteCircle
+        display: none
+
+    &__text
+        position: relative
+        color: white
+        margin: 40px
+        max-width: 800px
+        user-select: none
+        font-size: 1.5em
+
+.yourWebsite__text span 
+    position: relative
+    display: inline-block
+    cursor: pointer
+
+span.active 
+    animation: smoke 2s linear forwards
+    transform-origin: bottom
 
 .statistic
     width: 100vw
