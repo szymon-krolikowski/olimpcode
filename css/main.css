@@ -347,6 +347,77 @@ body {
   display: none !important;
 }
 
+.yourWebsite {
+  width: 100vw;
+  padding: 50px 20px;
+  background-image: url("../image/biurko-laptop.jpg");
+}
+
+.yourWebsite__headingArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.yourWebsite__headingTwo {
+  margin: 20px 0px;
+  color: white;
+}
+
+.yourWebsite__headingThree {
+  color: white;
+  margin: 10px 0px;
+}
+
+.yourWebsite__icon {
+  width: 50px;
+}
+
+.yourWebsite__wrapper {
+  width: 100%;
+}
+
+.yourWebsite__textArticle {
+  width: 100%;
+}
+
+.yourWebsite__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.yourWebsite__box:nth-child(1) {
+  margin: 50px 0px 20px;
+}
+
 .statistic {
   width: 100vw;
   background-color: #ffe400;
