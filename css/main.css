@@ -872,6 +872,26 @@ body {
   .swiper-button-next--mobile {
     left: 90% !important;
   }
+  .yourWebsite__box {
+    width: 30%;
+  }
+  .yourWebsite__textArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .yourWebsite__box:nth-child(1) {
+    margin: 30px 0px 30px;
+  }
   .statistic {
     position: relative;
     padding: 50px 0px;
