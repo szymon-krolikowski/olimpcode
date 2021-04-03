@@ -108,7 +108,7 @@
             transform: rotate(-30deg)
 
     .recentProjects
-        padding: 100px 20px
+        padding: 70px 20px
 
         &__decorationBigGrayCircle
             width: 750px
@@ -126,6 +126,10 @@
         left: -3% !important
         top: 60% !important
         color: $black !important
+        transition: color 0.3s
+
+        &:hover
+            color: $yellow !important
 
     .swiper-button-next--pc
         display: block !important
@@ -133,16 +137,22 @@
         right: -3% !important
         top: 60% !important
         color: $black !important
+        transition: color 0.3s
+
+        &:hover
+            color: $yellow !important
 
     .yourWebsite
+        padding: 70px 20px
 
         &__wrapper
             max-width: 1300px
             margin: 0 auto
             position: relative
 
-        &__box
-            width: 30%
+        &__headingArticle
+            max-width: 850px
+            margin: 0 auto
 
         &__textArticle
             display: flex
@@ -150,6 +160,9 @@
             justify-content: space-between
             flex-wrap: wrap
             margin-top: 50px
+
+        &__box
+            width: 30%
 
         &__box:nth-child(1)
             margin: 30px 0px 30px
@@ -172,7 +185,7 @@
         &__decorationWhiteCircle
             display: block
             position: absolute
-            top: 90%
+            top: 98%
             left: -12%
             width: 35px
             height: 35px
@@ -193,20 +206,24 @@
                 border-radius: 50%
     .statistic
         max-width: 100vw
+        padding: 70px 20px
 
         &__wrapper
             max-width: 1300px
-            margin: 0 auto
             display: flex
             justify-content: center
             align-content: center
             align-items: center
+            margin: 0 auto
             
         &__textArticle
             width: 33%
 
         &__statisticsArticle
             width: 33% 
+
+        &__image
+            width: 80%
 
         &__boxStatistic:hover .statistic__decorationWhiteTraingle
             transform: rotate(10deg)
@@ -227,16 +244,12 @@
         &__decorationTriangle
             transition: transform 1s
 
-        &__image
-            width: 80%
-
         &__decorationZigZagOne
             display: block
             top: 70%
             left: 110%
 
         &__decorationZigZagTwo
-            display: block
             display: block
             position: absolute
             top: 90%
@@ -271,6 +284,7 @@
             stroke-width: 2px
 
     .services
+        padding: 70px 20px
 
         &__wrapper
             position: relative
@@ -279,16 +293,16 @@
 
         &__box
             position: relative
-            background-color: #F6F6F6
-            padding: 30px
-            display: flex
             width: 28%
+            display: flex
             flex-direction: column
             justify-content: center
             align-content: center
             align-items: center
             text-align: center
+            background-color: #F6F6F6
             margin: 1% 1%
+            padding: 30px
             z-index: 100
 
         &__decorationBigGrayCircle
@@ -297,13 +311,13 @@
             left: 100%
             width: 700px
             height: 700px
-            border-radius: 50%
-            background-color: rgba(156, 156, 156, 0.1)
             display: flex
             flex-direction: row
             justify-content: center
             align-content: center
             align-items: center
+            border-radius: 50%
+            background-color: rgba(156, 156, 156, 0.1)
             animation: circleGrayDecoration 40s linear alternate infinite
 
             &::before
@@ -322,12 +336,12 @@
             left: -10%
             width: 25px
             height: 25px
-            background-color: $black
-            border-radius: 50%
             display: flex
             justify-content: center
-            align-content: center
             align-items: center
+            align-content: center
+            background-color: $black
+            border-radius: 50%
             animation: circleOneDecoration 1s linear alternate infinite
 
             &::after
@@ -340,13 +354,13 @@
 
     .precontact
         flex-direction: row
+        padding: 70px 20px
 
         &__headingTwo
             color: $white
             margin-bottom: 0px
             padding-right: 50px
 
-    
     .contact
 
         &__wrapper
