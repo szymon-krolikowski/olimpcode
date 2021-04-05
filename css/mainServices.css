@@ -103,6 +103,10 @@
   color: #e6e6e6;
 }
 
+.spanColorYellow {
+  color: #ffe400;
+}
+
 @media screen and (min-width: 760px) {
   .headingOne {
     font-size: 4rem;
