@@ -67,4 +67,27 @@
             align-items: center
             align-content: center
 
+    .contact
+
+        &__wrapper
+            display: flex
+
+        &__textArticle
+            order: 1
+
+        &__decorationZigZagOne
+            position: absolute
+            top: 0%
+            left: 0%
+            fill: transparent
+            stroke-dasharray: 130
+            stroke-dashoffset: 130
+            animation: zigZagTwo 2s ease-out alternate infinite
+
+        &__decorationZigZagTwo
+            display: block
+            position: absolute
+            top: 80%
+            left: 160%
+
     
