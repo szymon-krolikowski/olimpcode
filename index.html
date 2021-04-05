@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
+
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <div class="navigation__menuButton">
+          <div class="navigation__menuButtonBurger"></div>
+        </div>
+        <p class="navigation__heading headingOne">Olimp <span class="spanColorYellow"><</span>Code<span class="spanColorYellow">></span></p>
+        <div class="navigation__navigation">
+          <ul class="navigation__unorderList">
+            <li><a class="navigation__link paragraph" href="index.html">Strona główna</a></li>
+            <li><a class="navigation__link paragraph" href="uslugi.html">Usługi</a></li>
+            <li><a class="navigation__link paragraph" href="realizacje.html">Zrealizowane projekty</a></li>
+            <li><a class="navigation__link paragraph" href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="navigationMobile">
+      <ul class="navigationMobile__unorderList">
+        <li class="navigationMobile__elementList">Strona główna</li>
+        <li class="navigationMobile__elementList">Usługi</li>
+        <li class="navigationMobile__elementList">Zrealizowane projekty</li>
+        <li class="navigationMobile__elementList">Kontakt</li>
+      </ul>
+      <div class="navigationMobile__bigCircleDecoration"></div>
+    </section>
+
     <header class="header">
       <div class="header__wrapper">
         <article class="header__textArticle">
@@ -488,7 +516,7 @@
       <button class="button">Skontaktuj się ze mną</button>
     </section>
 
-    <section class="contact">
+    <section id="kontakt" class="contact">
       <div class="contact__wrapper">
         <article class="contact__textArticle">
           <h2 class="headingTwo contact__heading">Informacje kontaktowe</h2>
@@ -578,6 +606,7 @@
     </section>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/navigation.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/smokeEfect.js"></script>
 </html>
