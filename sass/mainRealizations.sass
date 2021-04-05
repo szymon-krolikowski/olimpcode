@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import "./_topography"
+@import "./_keyframes"
+
+*,
+::after,
+::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+    font-family: 'Roboto', sans-serif
+
+body
+    background-image: radial-gradient(#c4c4c4 1px, #0000 0)
+    background-position: 50%
+    background-size: 80px 80px
+    overflow-x: hidden
+
+.header
+    position: relative
+    width: 100vw
+    min-height: 30vh
+    max-height: 30vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-image: radial-gradient(#c4c4c4 1px, #F6F6F6 0)
+    background-position: 50%
+    background-size: 80px 80px
+    padding: 20px 50px 50px
+    overflow: hidden
+
+    &__wrapper
+        position: relative
+
+    &__imageArticle
+       display: none
+
+    &__paragraph
+        position: absolute
+        top: 220%
+        color: $gray
+        font-size: 1.4rem
+
+    &__linkOne,
+        text-decoration: none
+        color: $gray
+        transition: color 0.3s
+
+    &__linkTwo
+        text-decoration: none
+        color: $black
+        transition: color 0.3s
+
+    &__spanLinkOne:hover .header__linkOne
+        color: $yellow
+
+    &__spanLinkTwo:hover .header__linkTwo
+        color: $yellow
+
+    &__span
+        padding: 0px 7px
+
+    &__decorationZigZagOne
+        position: absolute
+        top: -100%
+        left: 70%
+        fill: transparent
+        stroke-dasharray: 140
+        stroke-dashoffset: 140
+        animation: zigZagThree 3s ease-out alternate infinite
+
+    &__decorationCircleOne
+        position: absolute
+        top: 150%
+        left: 80%
+        width: 30px
+        height: 30px
+        background-color: $yellow
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        animation: circleOneDecoration 1s linear alternate infinite
+
+        &::after
+            content: ""
+            position: absolute
+            width: 40%
+            height: 40%
+            background-color: $white
+            border-radius: 50%
+
+    &__decorationTriangleOne,
+    &__decorationZigZagTwo
+        display: none
+
+@import "./_mediumRealizations"
+@import "./_largeRealizations"
