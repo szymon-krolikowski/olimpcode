@@ -73,3 +73,72 @@
             left: -18%
             top: -40%
             transform: rotate(85deg)
+
+    .precontact
+        flex-direction: row
+        padding: 70px 20px
+
+        &__headingTwo
+            color: $white
+            margin-bottom: 0px
+            padding-right: 50px
+
+    .contact
+
+        &__wrapper
+            position: relative
+            max-width: 1000px
+            margin: 0 auto
+
+        &__heading
+            font-size: 2.8rem
+            line-height: 1.45
+            color: $black
+
+        &__image
+            position: relative
+            width: 100%
+            z-index: 1
+
+        &__textArticle
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+
+        &__boxContact
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            align-content: center
+
+        &__decorationBigYellowCircle
+            top: 0%
+            left: -25%
+            width: 350px
+            height: 350px
+
+        &__decorationCircleOne
+            display: block
+            position: absolute
+            top: 1%
+            left: 110%
+            width: 35px
+            height: 35px
+            background-color: $black
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            animation: circleOneDecoration 1s linear alternate infinite
+
+            &::after
+                content: ""
+                position: absolute
+                width: 40%
+                height: 40%
+                background-color: $white
+                border-radius: 50%
