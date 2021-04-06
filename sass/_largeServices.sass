@@ -1,78 +1,120 @@
 @media screen and ( min-width: 998px )
-    .header
-        min-height: 40vh
-        max-height: 40vh
-    
+    .navigation
+        background-image: radial-gradient(#c4c4c4 1px, #F6F6F6 0)
+        background-position: 50%
+        background-size: 80px 80px
+        box-shadow: none
+        height: 8vh
+        transition: all 0.5s
+
+        &__navigation
+            display: flex
+        
         &__wrapper
-            max-width: 1300px
+            display: flex
+            justify-content: space-between
+
+        &__menuButton
+            display: none
+
+        &__heading
+            padding-left: 0px
+            font-size: 3rem
+
+        &__unorderList
+            list-style: none
+            display: flex   
+
+        &__link
+            position: relative
+            font-weight: 400
+            text-decoration: none
+            color: $black
+            transition: color 0.3s
+            margin: 0px 0px 0px 40px
+
+        &__link::before
+            content: ""
+            position: absolute
+            top: 110%
+            width: 0%
+            height: 3px
+            background-color: $yellow
+            transition: width 0.5s
+
+        &__link:hover::before
+            width: 100%
+
+    .navigation__scroll
+        background-image: none
+        background-color: $white
+        box-shadow: 0px 2px 20px 0px rgba(156,156,156, 0.3)
+
+    .header
+        padding: 50px 20px 40px
+
+        &__wrapper
+            width: 1300px
             margin: 0 auto
-            display: flex
-            flex-direction: row
-            justify-content: center
-            align-items: center
-
-        &__textArticle
-            width: 50%
-
-        &__imageArticle
-            display: flex
-            flex-direction: row
-            width: 50%
-
-        &__paragraph
-            position: absolute
-            top: 260%
-            color: $gray
-            font-size: 1.4rem
-
-        &__image
-            position: absolute
-            top: -130%
-            left: 78%
-            z-index: 1
 
         &__decorationBigYellowCircle
-            position: absolute
-            top: 50%
-            left: 55%
+            top: 40%
+            left: -10%
             width: 500px
             height: 500px
-            background-color: $yellow
+
+        &__image
+            left: 50%
+            position: relative
+
+        &__decorationZigZagOne
+            display: block
+            position: absolute
+            top: 60%
+            left: -5%
+
+        &__decorationCircleOne
+            position: absolute
+            top: 80%
+            left: 110%
+            width: 30px
+            height: 30px
+            background-color: $black
             border-radius: 50%
             display: flex
             justify-content: center
+            align-content: center
             align-items: center
+            animation: circleOneDecoration 1s 0.3s linear alternate infinite
 
-            &::before
+            &::after
                 content: ""
                 position: absolute
                 width: 40%
                 height: 40%
-                background-color: #F6F6F6
+                background-color: $white
                 border-radius: 50%
 
-        &__decorationZigZagOne
-            left: 110%
-            top: -40%
-
-        &__decorationZigZagTwo
+        &__decorationZigZagThree
             display: block
             position: absolute
-            top: 110%
-            left: 60%
+            top: 0%
+            left: 100%
+            stroke: #000
+            stroke-width: 1px
+            fill: transparent
+            stroke-dasharray: 130
+            stroke-dashoffset: 130
+            animation: zigZagTwo 3s ease-out alternate infinite
 
-        &__decorationCircleOne
-            background-color: $black
-            top: 200%
-            left: 110%
-
-        &__decorationTriangleOne
+        &__decorationTriangleTwo
             display: block
+            position: absolute
+            top: 78%
+            left: -15%
             width: 50px
-            position: absolute
-            left: -18%
-            top: -40%
-            transform: rotate(85deg)
+            display: block
+            transform: rotate(-30deg)
             
     .services
         width: 100vw
