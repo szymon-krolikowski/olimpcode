@@ -15,9 +15,9 @@
       <div class="navigation__menuButton">
         <div class="navigation__menuButtonBurger"></div>
       </div>
-      <p class="navigation__heading headingOne">Olimp <span class="spanColorYellow">
-          <</span>Code <span class="spanColorYellow">>
-        </span></p>
+      <a class="navigation__linkLogo" href="#home"><p class="navigation__heading headingOne">Olimp <span class="spanColorYellow">
+        <</span>Code<span class="spanColorYellow">>
+      </span></p></a>
       <div class="navigation__navigation">
         <ul class="navigation__unorderList">
           <li><a class="navigation__link paragraph" href="index.html">Strona główna</a></li>
@@ -39,12 +39,12 @@
     <div class="navigationMobile__bigCircleDecoration"></div>
   </section>
 
-  <header class="header">
+  <header id="home" class="header">
     <div class="header__wrapper">
       <div class="header__decorationCircleOne"></div>
       <article class="header__textArticle">
         <h1 class="headingOne">Zrealizowane projekty</h1>
-        <p class="header__paragraph"><span class="header__spanLinkOne"><a class="header__linkOne" href="">Strona główna</a></span> <span class="header__span">></span> <span class="header__spanLinkTwo"><a href="" class="header__linkTwo">Usługi</a></span></p>
+        <p class="header__paragraph"><span class="header__spanLinkOne"><a class="header__linkOne" href="index.html">Strona główna</a></span> <span class="header__span">></span> <span class="header__spanLinkTwo"><a href="realizacje.html" class="header__linkTwo">Realizacje</a></span></p>
       </article>
       <article class="header__imageArticle">
         <img class="header__image" src="image/decoration-header.png" alt="">
@@ -104,28 +104,36 @@
       </article>
       <article class="realizations__realizationsArticle">
         <div class="realizations__box">
-          <img class="realizations__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.webp"
+          <a class="realizations__link" rel="nofollow" target="_blank" href="https://szymon-krolikowski.github.io/thundergreen--website/">
+            <img class="realizations__image" src="image//krolikowski-projekt-1.png"
             alt="">
-          <h3 class="headingThree">GreenCircle</h3>
-          <p class="paragraph">Strona internetowa</p>
+            <h3 class="headingThree">Green Volt</h3>
+            <p class="paragraph">Strona internetowa</p>
+          </a>
         </div>
         <div class="realizations__box">
-          <img class="realizations__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.webp"
+          <a class="realizations__link" rel="nofollow" target="_blank" href="https://szymon-krolikowski.github.io/agency--website/">
+            <img class="realizations__image" src="image/krolikowski-projekt-2.png"
             alt="">
-          <h3 class="headingThree">GreenCircle</h3>
-          <p class="paragraph">Strona internetowa</p>
+            <h3 class="headingThree">Design Studio</h3>
+            <p class="paragraph">Strona internetowa</p>
+         </a>
         </div>
         <div class="realizations__box">
-          <img class="realizations__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.webp"
-            alt="">
-          <h3 class="headingThree">GreenCircle</h3>
+          <a class="realizations__link" rel="nofollow" target="_blank" href="https://szymon-krolikowski.github.io/developer--website/">
+          <img class="realizations__image" src="image/krolikowski-projekt-3.png"
+          alt="">
+          <h3 class="headingThree">Marcin Kołodziej</h3>
           <p class="paragraph">Strona internetowa</p>
+         </a>
         </div>
         <div class="realizations__box">
-          <img class="realizations__image" src="image/krolikowskiCode-zrealizowana-strona-internetowa-GreenCircle.webp"
-            alt="">
-          <h3 class="headingThree">GreenCircle</h3>
+          <a class="realizations__link" rel="nofollow" target="_blank" href="https://szymon-krolikowski.github.io/avocadoStudio--website/">
+          <img class="realizations__image" src="image/krolikowski-projekt-4.png"
+          alt="">
+          <h3 class="headingThree">Avocado Studio</h3>
           <p class="paragraph">Strona internetowa</p>
+         </a>
         </div>
       </article>
     </div>
@@ -133,10 +141,12 @@
 
   <section class="precontact">
     <h2 class="headingTwo precontact__headingTwo">Dowiedz się więcej o moich usługach</h2>
-    <button class="button">Przejdź do usług</button>
+    <a href="uslugi.html">
+      <button class="button">Przejdź do usług</button>
+    </a>
   </section>
 
-  <section class="contact">
+  <section id="kontakt" class="contact">
     <div class="contact__wrapper">
       <article class="contact__textArticle">
         <h2 class="headingTwo contact__heading">Informacje kontaktowe</h2>

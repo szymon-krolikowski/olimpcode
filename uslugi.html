@@ -13,9 +13,9 @@
       <div class="navigation__menuButton">
         <div class="navigation__menuButtonBurger"></div>
       </div>
-      <p class="navigation__heading headingOne">Olimp <span class="spanColorYellow">
-          <</span>Code <span class="spanColorYellow">>
-        </span></p>
+      <a class="navigation__linkLogo" href="#home"><p class="navigation__heading headingOne">Olimp <span class="spanColorYellow">
+        <</span>Code<span class="spanColorYellow">>
+      </span></p></a>
       <div class="navigation__navigation">
         <ul class="navigation__unorderList">
           <li><a class="navigation__link paragraph" href="index.html">Strona główna</a></li>
@@ -37,12 +37,12 @@
     <div class="navigationMobile__bigCircleDecoration"></div>
   </section>
 
-  <header class="header">
+  <header id="home" class="header">
     <div class="header__wrapper">
       <div class="header__decorationCircleOne"></div>
       <article class="header__textArticle">
         <h1 class="headingOne">Oferowane usługi</h1>
-        <p class="header__paragraph"><span class="header__spanLinkOne"><a class="header__linkOne" href="">Strona główna</a></span> <span class="header__span">></span> <span class="header__spanLinkTwo"><a href="" class="header__linkTwo">Usługi</a></span></p>
+        <p class="header__paragraph"><span class="header__spanLinkOne"><a class="header__linkOne" href="index.html">Strona główna</a></span> <span class="header__span">></span> <span class="header__spanLinkTwo"><a href="uslugi.html" class="header__linkTwo">Usługi</a></span></p>
       </article>
       <article class="header__imageArticle">
         <img class="header__image" src="image/decoration-header.png" alt="">
@@ -175,10 +175,12 @@
 
     <section class="precontact">
       <h2 class="headingTwo precontact__headingTwo">Zapoznaj się z moimi projektami</h2>
-      <button class="button">Przejdź do portfolio</button>
+      <a href="realizacje.html">
+        <button class="button">Przejdź do portfolio</button>
+      </a>
     </section>
 
-    <section class="contact">
+    <section id="kontakt" class="contact">
       <div class="contact__wrapper">
         <article class="contact__textArticle">
           <h2 class="headingTwo contact__heading">Informacje kontaktowe</h2>
