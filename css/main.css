@@ -414,6 +414,10 @@ body {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.navigation__linkLogo {
+  text-decoration: none;
+}
+
 .navigationMobile {
   width: 80vw;
   margin-top: 7vh;
@@ -567,6 +571,16 @@ body {
 
 .recentProjects__image {
   width: 100%;
+}
+
+.recentProjects__link {
+  text-decoration: none;
+}
+
+.recentProjects__link:hover .paragraph {
+  color: #151515;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
 }
 
 .swiper-slide {

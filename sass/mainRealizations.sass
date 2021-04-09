@@ -96,6 +96,9 @@ body
     &__menuButton.activeMobileNavigation .navigation__menuButtonBurger::after 
         transform: rotate(-45deg) translate(35px, 35px)
 
+    &__linkLogo
+        text-decoration: none
+
 .navigationMobile
     width: 80vw
     margin-top: 7vh
@@ -214,6 +217,13 @@ body
 
     &__image
         width: 100%
+
+    &__link
+        text-decoration: none
+
+    &__link:hover .paragraph
+        color: $yellow
+        transition: color 0.5s
 
 
 .precontact

@@ -414,6 +414,10 @@ body {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.navigation__linkLogo {
+  text-decoration: none;
+}
+
 .navigationMobile {
   width: 80vw;
   margin-top: 7vh;
@@ -575,6 +579,16 @@ body {
 
 .realizations__image {
   width: 100%;
+}
+
+.realizations__link {
+  text-decoration: none;
+}
+
+.realizations__link:hover .paragraph {
+  color: #ffe400;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .precontact {
