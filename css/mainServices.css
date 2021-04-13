@@ -868,7 +868,7 @@ body {
     width: calc(100% - 40px);
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
   }
   .footer__firstArticle {
