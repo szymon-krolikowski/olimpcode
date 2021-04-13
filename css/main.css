@@ -1444,6 +1444,19 @@ span.active {
     top: 80%;
     left: 160%;
   }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 40px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer__firstArticle {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 998px) {
@@ -2061,6 +2074,10 @@ span.active {
     height: 40%;
     background-color: white;
     border-radius: 50%;
+  }
+  .footer__firstArticle {
+    display: block;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
