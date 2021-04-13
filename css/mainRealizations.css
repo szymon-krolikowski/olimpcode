@@ -730,6 +730,36 @@ body {
   display: none;
 }
 
+.footer {
+  padding: 25px 20px;
+  background: #151515;
+}
+
+.footer__article {
+  margin: 20px 0px;
+}
+
+.footer__paragraphMain {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer__paragraphLogo {
+  font-family: 'Pacifico', cursive;
+}
+
+.footer__link {
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #ffe400;
+}
+
 @media screen and (min-width: 768px) {
   .navigation__heading {
     font-size: 3rem;
@@ -853,6 +883,19 @@ body {
     position: absolute;
     top: 80%;
     left: 160%;
+  }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 40px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer__firstArticle {
+    display: none;
   }
 }
 
@@ -1116,6 +1159,10 @@ body {
     height: 40%;
     background-color: white;
     border-radius: 50%;
+  }
+  .footer__firstArticle {
+    display: block;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=mainRealizations.css.map */
