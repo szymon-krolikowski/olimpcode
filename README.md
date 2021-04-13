@@ -27,7 +27,6 @@ PageSpeed Insights
 
 ## Tasks for the future
 
-- Add footer
 - SEO optimization
 
 ## Sources
